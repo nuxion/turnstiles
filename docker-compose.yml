@@ -1,0 +1,23 @@
+---
+version: '3'
+
+services:
+    front:
+        image: nginx:1.15.12-alpine
+        volumes:
+            - ./molinetes/dist:/usr/share/nginx/html
+        ports:
+            - 80:80
+        networks:
+            - turnstiles
+    back:
+        build:
+            context: ./molinetes_back
+        ports:
+            - 8000:8000
+        networks:
+            - turnstiles
+
+networks:
+    turnstiles:
+
