@@ -1,0 +1,6 @@
+[submodule "molinetes_back"]
+	path = molinetes_back
+	url = https://github.com/nuxion/molinetes_back
+[submodule "molinetes"]
+	path = molinetes
+	url = https://github.com/nuxion/molinetes
